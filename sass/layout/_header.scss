@@ -1,0 +1,104 @@
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header{
+    border-bottom: 1px solid #ECECEC;
+    
+    padding-top: 32px;
+    padding-bottom: 22px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.link-text {
+position: relative;
+}
+
+.studio::after,
+.portfolio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -31px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $akcent-color;
+}
+
+.nav-link {
+    display: block;
+    color: $title-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border-color: $akcent-color;
+        fill: $akcent-color;
+    }
+}
+
+
+.link-text:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contact-links {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.02em;
+    margin-left: auto;
+    height: 16px
+}
+
+.contact-link {
+    color: $main-text-color;
+    display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover{
+        color: $akcent-color;
+        fill: $akcent-color;
+    }
+}
+
+.contact-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-logo {
+    width: 16px;
+    fill: $main-text-color;
+    margin-right: 10px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .contact-link:hover &,
+    .contact-link:focus & {
+        color: $akcent-color;
+        fill: $akcent-color;
+    }
+}
+
