@@ -1,9 +1,9 @@
 
-.section-work {
+.work {
     padding: 94px 0;
 }
 
- .work-title {
+ .work__title {
      margin-top: 0;
      margin-bottom: 50px;
     font-weight: 700;
@@ -14,7 +14,7 @@
     color: $title-color;
 }
 
-.work-item  {
+.work__item  {
     position: relative;
     width: calc((100% - 60px) / 3);
     height: 294px;
@@ -24,20 +24,21 @@
     
 }
 
-.work-list {
+.work__list {
     display: flex;
 }
 
-.work-item-descr {
+
+.work__text {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 100%;
     background: rgba(47, 48, 58, 0.8);
-}
+    padding-top: 27px;
+    padding-bottom: 27px;
 
-.work-text {
-    margin: 27px 82px;
+    margin: 0;
 
     font-weight: 700;
     font-size: 14px;

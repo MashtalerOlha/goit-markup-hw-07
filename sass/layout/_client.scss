@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -16,7 +16,7 @@
     margin-bottom: 94px;
 }
 
-.client-item {
+.client-list__item {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -35,9 +35,13 @@
         border-color: $akcent-color;
         fill: $akcent-color;
         }
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
-.cl-link {
+.client-list__link {
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -45,21 +49,17 @@
     align-items: center;
 }
 
-.client-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.client-logo {
+.client-list__logo {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
 
-    .client-item:hover &{
+    .client-list__item:hover &{
         border-color: $akcent-color;
         fill: $akcent-color;
     
     }
-    .cl-link:focus &{
+    .client-list__link:focus &{
         border-color: $akcent-color;
         fill: $akcent-color;
     }

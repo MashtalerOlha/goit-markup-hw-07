@@ -1,14 +1,14 @@
 
-.header .container {
-    display: flex;
-    align-items: center;
-}
-
 .header{
     border-bottom: 1px solid #ECECEC;
     
     padding-top: 32px;
     padding-bottom: 22px;
+
+    & .container {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .nav {
@@ -16,11 +16,11 @@
     align-items: center;
 }
 
-.nav-list {
+.nav__list {
     display: flex;
 }
 
-.link-text {
+.nav__link-text {
 position: relative;
 }
 
@@ -37,7 +37,7 @@ position: relative;
     background-color: $akcent-color;
 }
 
-.nav-link {
+.nav__link {
     display: block;
     color: $title-color;
     font-weight: 500;
@@ -47,19 +47,18 @@ position: relative;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
-        border-color: $akcent-color;
-        fill: $akcent-color;
+        color: $akcent-color;
     }
 }
 
-
-.link-text:not(:last-child) {
+.nav__link-text:not(:last-child) {
     margin-right: 50px;
 }
 
-.contact-links {
+.contact-header {
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -70,7 +69,7 @@ position: relative;
     height: 16px
 }
 
-.contact-link {
+.contact-header__link {
     color: $main-text-color;
     display: flex;
     transition-property: color;
@@ -78,25 +77,25 @@ position: relative;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
-    &:hover{
+    &:hover {
         color: $akcent-color;
         fill: $akcent-color;
     }
 }
 
-.contact-link:not(:last-child) {
+.contact-header__link:not(:last-child) {
     margin-right: 50px;
 }
 
-.contacts-logo {
+.contact-header__logo {
     width: 16px;
     fill: $main-text-color;
     margin-right: 10px;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    .contact-link:hover &,
-    .contact-link:focus & {
+    .contact-header__link:hover &,
+    .contact-header__link:focus & {
         color: $akcent-color;
         fill: $akcent-color;
     }

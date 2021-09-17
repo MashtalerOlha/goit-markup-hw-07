@@ -1,14 +1,14 @@
-.about-us {
+.superiority {
     padding-top: 94px;
 }
 
- .superiority-list {
+ .superiority__list {
      display: flex;
      margin-left: -30px;
  }
 
 
-.superiority-ikon {
+.superiority__icon {
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -19,12 +19,12 @@
     align-items: center;
 }
 
-.superiority-item {
+.superiority__item {
     width: calc((100% - 30px) / 4);
     margin-left: 30px;
 }
 
- .about-us-title {
+ .superiority__title {
      margin: 0;
     font-size: 14px;
     line-height: 1.14;
@@ -33,7 +33,7 @@
     color: $title-color;
  }
 
- .about-us-text {
+ .superiority__text {
      margin-top: 10px;
     font-weight: 400;
     font-size: 14px;
